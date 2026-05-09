@@ -2,7 +2,7 @@ import { Mail, Shield, Zap, Globe, Cpu, Lock } from "lucide-react";
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+    <main className="mx-auto max-w-4xl px-6 py-12 md:py-16">
       {/* 1. Hero Section */}
       <section className="mb-20">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
