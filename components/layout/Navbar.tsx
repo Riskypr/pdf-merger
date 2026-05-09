@@ -5,18 +5,18 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md">
       <div className="container mx-auto flex h-[80px] items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-400 text-white shadow-lg shadow-amber-200">
-            <FileStack size={24} />
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg text-white shadow-lg shadow-emerald-200">
+            <img src="/favicon.ico" alt="PDFCraft Logo" className="h-8 w-8" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-gray-900">PDF<span className="text-amber-400">Craft</span></span>
+          <span className="text-xl font-bold tracking-tight text-gray-900">PDF<span className="text-emerald-500">Craft</span></span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-          <a href="#" className="hover:text-amber-400 transition-colors">Tools</a>
-          <a href="/privacy" className="hover:text-amber-400 transition-colors">Privacy</a>
-          <a href="/about" className="hover:text-amber-400 transition-colors">About</a>
+          <a href="#" className="hover:text-emerald-400 transition-colors">Tools</a>
+          <a href="/privacy" className="hover:text-emerald-400 transition-colors">Privacy</a>
+          <a href="/about" className="hover:text-emerald-400 transition-colors">About</a>
         </div>
         <div className="flex items-center gap-4">
-          <a href="https://github.com" target="_blank" className="rounded-full p-2 text-gray-800 hover:bg-gray-200 transition-all">
+          <a href="https://github.com/Riskypr/pdf-merger" target="_blank" className="rounded-full p-2 text-gray-800 hover:bg-emerald-100 transition-all">
             <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
