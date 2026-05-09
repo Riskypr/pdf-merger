@@ -11,6 +11,7 @@ export default function Navbar() {
         <nav className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
             <div className="container mx-auto flex h-[80px] items-center justify-between px-4 sm:px-6">
                 {/* Logo Section */}
+                <a href="/">
                 <div className="flex items-center gap-2 cursor-pointer group">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white shadow-sm border border-gray-100 group-hover:shadow-emerald-100 group-hover:border-emerald-100 transition-all">
                         <img src="/favicon.ico" alt="PDFCraft Logo" className="h-7 w-7" />
@@ -19,6 +20,7 @@ export default function Navbar() {
                         PDF<span className="text-emerald-500">Craft</span>
                     </span>
                 </div>
+                </a>
 
                 {/* Navigation Links */}
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
