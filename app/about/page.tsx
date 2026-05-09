@@ -3,7 +3,7 @@ import { Mail, Shield, Zap, Globe, Cpu, Lock } from "lucide-react";
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12 md:py-16">
-      {/* 1. Hero Section */}
+      {/*  Hero Section */}
       <section className="mb-20">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
           Tentang <span className="text-emerald-400">PDFCraft</span>
@@ -13,7 +13,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* 2. Deep Dive: Penjelasan Lengkap Aplikasi */}
+      {/*  Penjelasan Lengkap Aplikasi */}
       <section className="mb-24 space-y-12">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
@@ -56,7 +56,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3. Core Values (Simple Grid) */}
+      {/*  Core Values */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-32 border-y border-slate-100 py-16">
         {[
           { icon: <Shield className="text-emerald-400" size={28} />, title: "Privasi Total", desc: "Data tetap di perangkat Anda." },
@@ -71,7 +71,7 @@ export default function AboutPage() {
         ))}
       </div>
 
-      {/* 4. Contact Section - Clean & Modern */}
+      {/* Contact Section  */}
       <section id="contact" className="grid md:grid-cols-2 gap-16 items-center">
         <div>
           <h2 className="text-3xl font-bold text-slate-900 mb-6">Hubungi Kami</h2>
