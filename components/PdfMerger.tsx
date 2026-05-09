@@ -66,24 +66,24 @@ export default function PdfMerger() {
                 className="mb-12 text-center"
             >
                 <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl text-balance">
-                    Gabungkan PDF dalam <span className="text-amber-400">Hitungan Detik</span>
+                    Gabungkan PDF dalam <span className="text-emerald-400">Hitungan Detik</span>
                 </h1>
                 <p className="mx-auto max-w-2xl text-lg text-gray-600">
                     Alat pengolah dokumen yang aman. File Anda tidak akan pernah meninggalkan perangkat Anda.
                 </p>
             </motion.div>
 
-            <div className="overflow-hidden rounded-3xl border border-gray-200 bg-white p-2 shadow-2xl shadow-amber-100">
+            <div className="overflow-hidden rounded-3xl border border-gray-200 bg-white p-2 shadow-2xl shadow-emerald-100">
                 <div
                     {...getRootProps()}
                     className={`relative overflow-hidden rounded-2xl border-2 border-dashed p-12 transition-all cursor-pointer ${
-                        isDragActive ? "border-amber-400 bg-amber-50/50" : "border-gray-200 bg-gray-50/50 hover:bg-gray-50"
+                        isDragActive ? "border-emerald-400 bg-emerald-50/50" : "border-gray-200 bg-gray-50/50 hover:bg-gray-50"
                     }`}
                 >
                     <input {...getInputProps()} />
                     <div className="flex flex-col items-center">
                         <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md">
-                            <UploadCloud className="h-8 w-8 text-amber-400" />
+                            <UploadCloud className="h-8 w-8 text-emerald-400" />
                         </div>
                         <p className="mb-2 text-xl font-bold text-gray-900">Pilih atau Tarik File</p>
                         <p className="text-gray-500 text-sm">Maksimal 20 file per penggabungan</p>
@@ -100,7 +100,7 @@ export default function PdfMerger() {
                         >
                             <div className="mb-4 flex items-center justify-between">
                                 <h3 className="text-lg font-bold text-gray-900">Urutan Dokumen ({files.length})</h3>
-                                <span className="text-[10px] text-amber-500 font-bold uppercase tracking-widest bg-amber-50 px-2 py-1 rounded-md">
+                                <span className="text-[10px] text-emerald-500 font-bold uppercase tracking-widest bg-emerald-50 px-2 py-1 rounded-md">
                                     Tarik untuk mengatur
                                 </span>
                             </div>
@@ -118,7 +118,7 @@ export default function PdfMerger() {
                                                             {...provided.draggableProps}
                                                             className={`flex items-center rounded-xl border p-4 transition-shadow ${
                                                                 snapshot.isDragging 
-                                                                ? "border-amber-400 bg-amber-50 shadow-xl ring-2 ring-amber-200 z-50" 
+                                                                ? "border-emerald-400 bg-emerald-50 shadow-xl ring-2 ring-emerald-200 z-50" 
                                                                 : "border-gray-100 bg-white"
                                                             }`}
                                                             style={{
@@ -158,7 +158,7 @@ export default function PdfMerger() {
                                 whileHover={{ scale: 1.01 }}
                                 whileTap={{ scale: 0.98 }}
                                 onClick={handleMerge}
-                                className="mt-8 flex w-full items-center justify-center gap-3 rounded-2xl bg-amber-400 py-4 text-lg font-bold text-white shadow-xl shadow-amber-200/50 transition-all hover:bg-amber-500 cursor-pointer"
+                                className="mt-8 flex w-full items-center justify-center gap-3 rounded-2xl bg-emerald-400 py-4 text-lg font-bold text-white shadow-xl shadow-emerald-200/50 transition-all hover:bg-emerald-500 cursor-pointer"
                             >
                                 <Download size={24} />
                                 Gabungkan Sekarang

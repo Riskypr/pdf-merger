@@ -6,7 +6,7 @@ export default function AboutPage() {
       {/* 1. Hero Section */}
       <section className="mb-20">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
-          Tentang <span className="text-amber-400">PDFCraft</span>
+          Tentang <span className="text-emerald-400">PDFCraft</span>
         </h1>
         <p className="text-xl text-slate-600 leading-relaxed max-w-3xl">
           Solusi pengolahan dokumen modern yang memprioritaskan keamanan data Anda di atas segalanya.
@@ -59,9 +59,9 @@ export default function AboutPage() {
       {/* 3. Core Values (Simple Grid) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-32 border-y border-slate-100 py-16">
         {[
-          { icon: <Shield className="text-amber-400" size={28} />, title: "Privasi Total", desc: "Data tetap di perangkat Anda." },
-          { icon: <Zap className="text-amber-400" size={28} />, title: "Tanpa Iklan", desc: "Fokus pada produktivitas Anda." },
-          { icon: <Globe className="text-amber-400" size={28} />, title: "Akses Instan", desc: "Tanpa login, tanpa ribet." },
+          { icon: <Shield className="text-emerald-400" size={28} />, title: "Privasi Total", desc: "Data tetap di perangkat Anda." },
+          { icon: <Zap className="text-emerald-400" size={28} />, title: "Tanpa Iklan", desc: "Fokus pada produktivitas Anda." },
+          { icon: <Globe className="text-emerald-400" size={28} />, title: "Akses Instan", desc: "Tanpa login, tanpa ribet." },
         ].map((item, i) => (
           <div key={i} className="text-center md:text-left">
             <div className="mb-4 inline-block">{item.icon}</div>
@@ -79,8 +79,8 @@ export default function AboutPage() {
             Apakah Anda menemukan kendala atau ingin memberikan saran fitur baru? Kami sangat terbuka untuk berdiskusi dengan Anda.
           </p>
           <div className="space-y-4">
-            <a href="mailto:support@pdfcraft.com" className="group flex items-center gap-4 p-4 rounded-2xl border border-slate-100 hover:border-amber-200 hover:bg-amber-50 transition-all">
-              <div className="bg-white p-2 rounded-lg shadow-sm group-hover:bg-amber-400 group-hover:text-white transition-colors">
+            <a href="mailto:support@pdfcraft.com" className="group flex items-center gap-4 p-4 rounded-2xl border border-slate-100 hover:border-emerald-200 hover:bg-emerald-50 transition-all">
+              <div className="bg-white p-2 rounded-lg shadow-sm group-hover:bg-emerald-400 group-hover:text-white transition-colors">
                 <Mail size={20} />
               </div>
               <span className="font-semibold text-slate-700">support@pdfcraft.com</span>
@@ -92,13 +92,13 @@ export default function AboutPage() {
           <form className="space-y-5">
             <div className="space-y-2">
               <label className="text-sm font-bold text-slate-700 ml-1">Nama</label>
-              <input type="text" placeholder="Masukkan nama Anda" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all" />
+              <input type="text" placeholder="Masukkan nama Anda" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all" />
             </div>
             <div className="space-y-2">
               <label className="text-sm font-bold text-slate-700 ml-1">Pesan</label>
-              <textarea placeholder="Apa yang bisa kami bantu?" rows={4} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-all"></textarea>
+              <textarea placeholder="Apa yang bisa kami bantu?" rows={4} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all"></textarea>
             </div>
-            <button className="w-full py-4 bg-slate-900 hover:bg-amber-400 text-white rounded-xl font-bold transition-all shadow-lg shadow-slate-200 hover:shadow-amber-100 cursor-pointer">
+            <button className="w-full py-4 bg-slate-900 hover:bg-emerald-400 text-white rounded-xl font-bold transition-all shadow-lg shadow-slate-200 hover:shadow-emerald-100 cursor-pointer">
               Kirim Sekarang
             </button>
           </form>

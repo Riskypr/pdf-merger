@@ -5,7 +5,7 @@ export default function TermsPage() {
   return (
     <main className="min-h-screen bg-slate-50/50 py-12 px-6">
       <div className="mx-auto max-w-4xl">
-        <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-amber-600 transition-colors mb-8">
+        <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-slate-500 hover:text-emerald-600 transition-colors mb-8">
           <ArrowLeft size={16} /> Kembali ke Home
         </Link>
 
