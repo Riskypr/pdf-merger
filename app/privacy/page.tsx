@@ -1,4 +1,4 @@
-import { ShieldCheck, EyeOff, ServerOff, Lock, ArrowLeft } from "lucide-react";
+import { EyeOff, ServerOff, Lock, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
 export default function PrivacyPage() {

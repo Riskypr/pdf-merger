@@ -41,7 +41,7 @@ export default function TermsPage() {
             <div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">2. Batasan Tanggung Jawab</h3>
               <p className="text-slate-600 leading-relaxed">
-                Aplikasi ini disediakan "apa adanya" tanpa jaminan apa pun. Kami tidak bertanggung jawab atas kehilangan data atau kerusakan file yang terjadi selama proses penggabungan. Selalu pastikan Anda memiliki cadangan file asli.
+                Aplikasi ini disediakan &quot;apa adanya&quot; tanpa jaminan apa pun. Kami tidak bertanggung jawab atas kehilangan data atau kerusakan file yang terjadi selama proses penggabungan. Selalu pastikan Anda memiliki cadangan file asli.
               </p>
             </div>
           </div>

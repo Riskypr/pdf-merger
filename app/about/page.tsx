@@ -1,4 +1,4 @@
-import { Mail, Shield, Zap, Globe, Cpu, Lock } from "lucide-react";
+import { Mail, Shield, Zap, Globe, Cpu } from "lucide-react";
 
 export default function AboutPage() {
   return (
