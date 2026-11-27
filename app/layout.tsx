@@ -1,23 +1,32 @@
 import "./globals.css";
+import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import localFont from "next/font/local";
+import { NavigationProvider } from "@/components/docuflow/NavigationContext";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
-const googleSansFlex = localFont({
-  src: "./fonts/GoogleSansFlex-Latin.woff2",
-  weight: "100 1000",
-  style: "normal",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
-  variable: "--font-google-sans-flex",
+  variable: "--font-plus-jakarta",
 });
+
+export const metadata: Metadata = {
+  title: "DocuFlow — Utilitas Dokumen Modern",
+  description:
+    "Gabung, kompres, ekstrak, dan putar halaman PDF serta gambar langsung di browser Anda secara lokal dan privat.",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="id" className={googleSansFlex.variable}>
-      <body className="bg-[#F8FAFC] text-gray-900 antialiased">
-        <Navbar />
-        {children}
-        <Footer />
+    <html lang="id" className={plusJakartaSans.variable}>
+      <body className="min-h-screen bg-[#F4F6FB] text-[#0F172A] antialiased selection:bg-[#FFE4E6] selection:text-[#B91C1C]">
+        <NavigationProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </NavigationProvider>
       </body>
     </html>
   );
