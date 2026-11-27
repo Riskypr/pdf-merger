@@ -1,3 +1,94 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --df-primary: #d91b24;
+  --df-primary-hover: #b8141c;
+  --df-primary-soft: #fff1f2;
+  --df-secondary: #0f172a;
+  --df-tertiary: #10b981;
+  --df-neutral: #64748b;
+  --df-bg: #f4f6fb;
+  --df-surface: #ffffff;
+  --df-border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--df-bg);
+}
+
+body {
+  margin: 0;
+  color: var(--df-secondary);
+  background: var(--df-bg);
+  font-family: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  a[href] {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+@keyframes df-view-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes df-dropdown-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-view-enter {
+  animation: df-view-enter 0.24s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-dropdown-enter {
+  animation: df-dropdown-enter 0.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
