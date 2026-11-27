@@ -1,7 +1,7 @@
 # DocuFlow — Utilitas Dokumen Modern
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Riskypr/pdf-merger/main/public/assets/Logo.png" alt="DocuFlow Logo" width="140" />
+  <img src="public/assets/Logo.png" alt="DocuFlow Logo" width="140" />
 </p>
 
 <p align="center">

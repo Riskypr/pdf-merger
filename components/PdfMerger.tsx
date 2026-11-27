@@ -129,7 +129,7 @@ export default function PdfMerger() {
         aria-label="Navigasi bawah DocuFlow"
         className="fixed inset-x-0 bottom-0 z-50 border-t border-slate-100 bg-white/95 backdrop-blur-md md:hidden"
       >
-        <div className="mx-auto grid w-full max-w-2xl grid-cols-4 gap-1 px-1.5 pt-1.5 pb-[max(0.55rem,env(safe-area-inset-bottom))]">
+        <div className="mx-auto flex w-full max-w-2xl items-center justify-around gap-1 px-1.5 pt-1 pb-[max(0.45rem,env(safe-area-inset-bottom))]">
           {NAV_TABS.map(({ id, label, icon: Icon }) => {
             const active = !previewResult && view === id;
             return (
@@ -137,20 +137,20 @@ export default function PdfMerger() {
                 key={id}
                 type="button"
                 onClick={() => navigateToView(id)}
-                className={`flex min-w-0 flex-col items-center justify-center gap-1 py-0.5 text-[10px] leading-tight transition-colors ${
+                className={`flex shrink-0 flex-col items-center justify-center gap-0.5 px-1 py-0.5 text-[7.5px] leading-none tracking-tight transition-colors ${
                   active
                     ? "font-bold text-[#B91C1C]"
                     : "font-semibold text-[#475569] hover:text-slate-900"
                 }`}
               >
                 <span
-                  className={`grid h-7 w-12 place-items-center rounded-full transition-colors ${
+                  className={`grid h-6 w-9 place-items-center rounded-full transition-colors ${
                     active ? "bg-[#FDE8EA] text-[#B91C1C]" : "text-[#475569]"
                   }`}
                 >
-                  <Icon size={18} strokeWidth={active ? 2.2 : 1.9} />
+                  <Icon size={12} strokeWidth={active ? 2.2 : 1.9} />
                 </span>
-                <span className="w-full truncate px-0.5 text-center">{label}</span>
+                <span className="whitespace-nowrap text-center">{label}</span>
               </button>
             );
           })}

@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
-  Award,
   CheckCircle2,
   Code2,
   Cpu,
@@ -112,9 +112,9 @@ export default function AboutPage() {
 
       {/* Komitmen Kualitas Card */}
       <section className="flex items-center gap-3.5 rounded-2xl border border-slate-100 bg-white p-4 shadow-xs">
-        <div className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 text-white shadow-xs">
-          <Award size={26} className="text-amber-300" />
-        </div>
+        <div className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-white shadow-sm border border-slate-100">
+            <Image src="/assets/Logo.png" alt="DocuFlow Logo" width={44} height={44} className="object-contain" />
+          </div>
         <div className="min-w-0">
           <p className="inline-flex items-center gap-1 text-[10px] font-extrabold tracking-wider text-[#B91C1C] uppercase">
             <CheckCircle2 size={11} /> Komitmen Kualitas
